@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🖥️ Y-Diet – IT Support Dashboard (Notion Template)</title>
+  <style>
+    /* Base Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1em;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .section-container {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 25px;
+    }
+    .section-container h2 {
+      font-size: 1.5em;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table th, table td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    table th {
+      background: #f0f0f0;
+    }
+    ul.sop-list {
+      list-style-type: disc;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    a {
+      color: #005f73;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      color: #777;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🖥️ Y-Diet – IT Support Dashboard</h1>
+    <p>👨‍💻 Role: IT Support</p>
+    <p>
+      Ensures the stability, security, and optimization of Y-Diet’s technical systems including internal apps, 
+      WhatsApp automation, inventory dashboards, delivery tools, and customer-facing platforms. Acts as the bridge 
+      between tech operations and business flow.
+    </p>
+  </header>
+
+  <!-- Daily Tasks Section -->
+  <div class="section-container">
+    <h2>🗂️ Daily Tasks</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>⏱ Time</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Check system uptime</td>
+          <td>Morning</td>
+          <td>Monitor app/dashboard uptime and WhatsApp bot availability</td>
+        </tr>
+        <tr>
+          <td>Respond to tech issues</td>
+          <td>Ongoing</td>
+          <td>Resolve bugs from team (e.g., form not loading, label not printing)</td>
+        </tr>
+        <tr>
+          <td>Test WhatsApp flows (n8n)</td>
+          <td>Midday</td>
+          <td>Ensure bot replies for AVAV logs, delivery, and support are working</td>
+        </tr>
+        <tr>
+          <td>Monitor error logs</td>
+          <td>End of Day</td>
+          <td>Review app, n8n, and Firebase logs for red flags or failed loops</td>
+        </tr>
+        <tr>
+          <td>Backup data snapshot</td>
+          <td>Evening</td>
+          <td>Ensure cloud or local backup of kits, logs, and AVAV scores</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Weekly Responsibilities Section -->
+  <div class="section-container">
+    <h2>🗂️ Weekly Responsibilities</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>When</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Deploy minor updates</td>
+          <td>Monday</td>
+          <td>Push UX improvements or bug patches (e.g., typo fix, dropdown error)</td>
+        </tr>
+        <tr>
+          <td>Check n8n workflows</td>
+          <td>Wednesday</td>
+          <td>Audit Telegram bot, order flow, and AVAV triggers</td>
+        </tr>
+        <tr>
+          <td>Sync with AVAV Planner</td>
+          <td>Friday</td>
+          <td>Add/update any new logic into AI workflows (kit recommendation)</td>
+        </tr>
+        <tr>
+          <td>Test on multiple devices</td>
+          <td>Weekend</td>
+          <td>Ensure app/pages load well on mobile, tablet, and desktop</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Monthly Duties Section -->
+  <div class="section-container">
+    <h2>📆 Monthly Duties</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Security audit</td>
+          <td>Check auth systems, passwords, and tokens (Firebase, n8n, WhatsApp)</td>
+        </tr>
+        <tr>
+          <td>Update tech documentation</td>
+          <td>Maintain SOPs for backup, bug handling, and bot editing</td>
+        </tr>
+        <tr>
+          <td>System upgrade planning</td>
+          <td>Identify new tools/plugins needed (OCR, API linkers, AI models)</td>
+        </tr>
+        <tr>
+          <td>Automation health check</td>
+          <td>Test every flow: AVAV log → Suggestion → Kit process</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Tools You Use Section -->
+  <div class="section-container">
+    <h2>🧰 Tools You Use</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tool</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>n8n</td>
+          <td>Power WhatsApp flows, reminders, and bot automations</td>
+        </tr>
+        <tr>
+          <td>Firebase / Supabase</td>
+          <td>Backend database and authentication systems</td>
+        </tr>
+        <tr>
+          <td>Telegram + WhatsApp Cloud API</td>
+          <td>Bot delivery, AVAV logs, and feedback collection</td>
+        </tr>
+        <tr>
+          <td>Google Sheets + Apps Script</td>
+          <td>Lightweight dashboards and data synchronization</td>
+        </tr>
+        <tr>
+          <td>HTML / CSS / JS</td>
+          <td>Edit frontend interfaces as needed</td>
+        </tr>
+        <tr>
+          <td>GitHub or Replit</td>
+          <td>Track code versions and deploy patches</td>
+        </tr>
+        <tr>
+          <td>Notion / Trello</td>
+          <td>Ticketing or issue log tracking</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- IT Issue Log Template Section -->
+  <div class="section-container">
+    <h2>📋 IT Issue Log Template</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Module</th>
+          <th>Issue</th>
+          <th>Status</th>
+          <th>Handled By</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12-Apr</td>
+          <td>WhatsApp Bot</td>
+          <td>AVAV log not saving</td>
+          <td>✅ Fixed</td>
+          <td>Ram</td>
+        </tr>
+        <tr>
+          <td>13-Apr</td>
+          <td>Website</td>
+          <td>Sankalpa button broken</td>
+          <td>🔧 In Progress</td>
+          <td>Ram</td>
+        </tr>
+        <tr>
+          <td>14-Apr</td>
+          <td>n8n</td>
+          <td>Email trigger skipped</td>
+          <td>✅ Resolved</td>
+          <td>Ram</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Best Practices Section -->
+  <div class="section-container">
+    <h2>🧠 Best Practices</h2>
+    <ul class="sop-list">
+      <li>Use a staging version before deploying any fix to the live version</li>
+      <li>Maintain weekly backup folders for automation templates</li>
+      <li>Label and document n8n workflows with clear step names and notes</li>
+      <li>Monitor n8n memory usage (Docker or Cloud) to prevent bot breakdown</li>
+      <li>Keep Firebase keys and WhatsApp API tokens confidential and rotate them regularly</li>
+    </ul>
+  </div>
+
+  <!-- Team Collaboration Section -->
+  <div class="section-container">
+    <h2>🔗 Team Collaboration</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th>Interaction</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>AVAV Planner</td>
+          <td>Integrate scoring logic, update Sankalpa suggestions</td>
+        </tr>
+        <tr>
+          <td>Customer Support</td>
+          <td>Fix user-side errors, login problems, or chat failures</td>
+        </tr>
+        <tr>
+          <td>Packaging Lead</td>
+          <td>Enable label printing and update delivery sheet logs</td>
+        </tr>
+        <tr>
+          <td>Dispatch Coordinator</td>
+          <td>Maintain real-time kit tracking dashboard</td>
+        </tr>
+        <tr>
+          <td>Founder / CEO</td>
+          <td>Handle feature requests or security flags</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Y-Diet. All rights reserved.</p>
+  </footer>
+</body>
+</html>

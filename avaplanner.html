@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🧘‍♀️ Y-Diet – AVAV Planner Dashboard (Notion Template)</title>
+  <style>
+    /* Base Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1em;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .section-container {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 25px;
+      padding: 20px;
+    }
+    .section-container h2 {
+      font-size: 1.5em;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table th,
+    table td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    table th {
+      background: #f0f0f0;
+    }
+    ul.sop-list {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      color: #777;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🧘‍♀️ Y-Diet – AVAV Planner Dashboard</h1>
+    <p>👤 Role: AVAV Planner</p>
+    <p>Translates user data from daily AVAV logs (Ahāra, Vihāra, Āchāra, Vichāra) into dynamic, personalized kit recommendations. Helps align each user’s food plan with their physical, emotional, behavioral, and spiritual goals.</p>
+  </header>
+
+  <!-- Daily Tasks Section -->
+  <div class="section-container">
+    <h2>🗂️ Daily Tasks</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>⏱ Time</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Review new AVAV entries</td>
+          <td>Morning</td>
+          <td>Scan all submitted logs (telebot/web) for the past 24 hrs</td>
+        </tr>
+        <tr>
+          <td>Identify score deviations</td>
+          <td>Midday</td>
+          <td>Spot major changes (e.g., low Ahāra, high Vichāra)</td>
+        </tr>
+        <tr>
+          <td>Recommend updated kit types</td>
+          <td>Afternoon</td>
+          <td>Assign suitable kit category (e.g., Detox, Mind-Calm, Energy Boost)</td>
+        </tr>
+        <tr>
+          <td>Sync with Nutritionist</td>
+          <td>Afternoon</td>
+          <td>Verify nutrient compatibility of suggested plan</td>
+        </tr>
+        <tr>
+          <td>Trigger kit update</td>
+          <td>Before Dispatch</td>
+          <td>Tag user in database for upcoming cycle change</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Weekly Responsibilities Section -->
+  <div class="section-container">
+    <h2>🗂️ Weekly Responsibilities</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>When</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>User trend report</td>
+          <td>Every Monday</td>
+          <td>Submit insights to leadership on shifting user profiles</td>
+        </tr>
+        <tr>
+          <td>Coordinate with Packaging & Dispatch</td>
+          <td>Wednesday</td>
+          <td>Share user-specific kit preferences (e.g., no garlic, gluten-free)</td>
+        </tr>
+        <tr>
+          <td>Update AVAV Scoreboard</td>
+          <td>Friday</td>
+          <td>Refresh user leaderboard/streaks for gamification</td>
+        </tr>
+        <tr>
+          <td>Attend AVAV Huddle (team)</td>
+          <td>Weekly</td>
+          <td>Collaborate on spiritual alignment with meal journeys</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Monthly Duties Section -->
+  <div class="section-container">
+    <h2>📆 Monthly Duties</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Goal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Audit personalization outcomes</td>
+          <td>Assess how AVAV plan changes impacted user behavior</td>
+        </tr>
+        <tr>
+          <td>Refine kit-mapping algorithm</td>
+          <td>Improve logic linking scores to kit variants</td>
+        </tr>
+        <tr>
+          <td>Suggest new kit ideas</td>
+          <td>Based on trends (e.g., low Vichāra + emotional stress)</td>
+        </tr>
+        <tr>
+          <td>Collaborate with AI/Tech team</td>
+          <td>Review n8n automation triggers and flag exceptions</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Tools You Use Section -->
+  <div class="section-container">
+    <h2>🧰 Tools You Use</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tool</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>AVAV Dashboard (Notion or Google Sheet)</td>
+          <td>Monitor user scores and kit mapping status</td>
+        </tr>
+        <tr>
+          <td>Telegram / Web Bot Logs</td>
+          <td>Receive daily AVAV log entries</td>
+        </tr>
+        <tr>
+          <td>Kit Recommendation Matrix</td>
+          <td>Match score combos to kit types</td>
+        </tr>
+        <tr>
+          <td>n8n Workflows</td>
+          <td>Trigger automation → inventory & packaging alerts</td>
+        </tr>
+        <tr>
+          <td>Feedback Form</td>
+          <td>Post-delivery reflections for iterative refinement</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- AVAV Kit Recommendation Matrix Section -->
+  <div class="section-container">
+    <h2>📊 AVAV Kit Recommendation Matrix (Sample Snippet)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Ahāra</th>
+          <th>Vihāra</th>
+          <th>Āchāra</th>
+          <th>Vichāra</th>
+          <th>Suggested Kit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>🟡 4</td>
+          <td>🟢 7</td>
+          <td>🔴 2</td>
+          <td>🟢 8</td>
+          <td>Mind Balance Kit</td>
+        </tr>
+        <tr>
+          <td>🔴 3</td>
+          <td>🟡 5</td>
+          <td>🟢 7</td>
+          <td>🔴 3</td>
+          <td>Gut Cleanse Kit</td>
+        </tr>
+        <tr>
+          <td>🟢 8</td>
+          <td>🟡 6</td>
+          <td>🟡 5</td>
+          <td>🟡 5</td>
+          <td>Routine Support Kit</td>
+        </tr>
+        <tr>
+          <td>🔴 2</td>
+          <td>🔴 3</td>
+          <td>🔴 2</td>
+          <td>🟡 6</td>
+          <td>Spiritual Reset Kit</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Best Practices Section -->
+  <div class="section-container">
+    <h2>🧠 Best Practices</h2>
+    <ul class="sop-list">
+      <li>Always prioritize consistency of user AVAV logs over one-off spikes</li>
+      <li>Engage with top users through WhatsApp or Email nudges for deeper insight</li>
+      <li>Flag “chronic misalignments” (e.g., low Vichāra for 7+ days) to Coach or Customer Care</li>
+      <li>Use Sankalpa history to understand intent before changing kits</li>
+      <li>Ensure AVAV-aligned kits respect dietary preferences (Satvic, Jain, Vegan)</li>
+    </ul>
+  </div>
+
+  <!-- Department Collaborations Section -->
+  <div class="section-container">
+    <h2>🔗 Department Collaborations</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Team</th>
+          <th>Interaction</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nutritionist</td>
+          <td>Ensure ingredient compatibility</td>
+        </tr>
+        <tr>
+          <td>Packaging Lead</td>
+          <td>Update kit tag (Detox / Immunity / Mood Balance)</td>
+        </tr>
+        <tr>
+          <td>Customer Support</td>
+          <td>Communicate changes with empathy to users</td>
+        </tr>
+        <tr>
+          <td>Tech/Automation</td>
+          <td>Modify trigger rules for auto-recommendations</td>
+        </tr>
+        <tr>
+          <td>Marketing</td>
+          <td>Use trends to tell AVAV transformation stories</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Y-Diet. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NatSeer Y-Diet Compact Org Chart</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f7fb;
+      margin: 0;
+      padding: 40px 20px;
+      color: #2c3e50;
+    }
+
+    /* Banner Carousel Styles */
+    .carousel {
+      position: relative;
+      width: 80%;
+      margin: 0 auto 40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .slides {
+      display: flex;
+      width: 100%; /* for 3 slides */
+      animation: slide 9s infinite;
+    }
+    .slides img {
+      width: 100%;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+    @keyframes slide {
+      0%    { transform: translateX(0); }
+      20%   { transform: translateX(0); }
+      25%   { transform: translateX(-100%); }
+      45%   { transform: translateX(-100%); }
+      50%   { transform: translateX(-200%); }
+      70%   { transform: translateX(-200%); }
+      75%   { transform: translateX(0); }
+      100%  { transform: translateX(0); }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 50px;
+    }
+
+    .founder {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .founder .box {
+      background: #2c3e50;
+      color: white;
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-weight: bold;
+      display: inline-block;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      cursor: pointer; /* make it clickable */
+    }
+
+    .departments {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .department {
+      background: white;
+      border: 2px solid #dce3ec;
+      border-radius: 12px;
+      width: 200px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .department h3 {
+      background: #3498db;
+      color: white;
+      padding: 12px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      margin: 0;
+    }
+
+    .roles {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      gap: 10px;
+    }
+
+    .roles button {
+      background: #f8f9fa;
+      border: 1px solid #3498db;
+      border-radius: 8px;
+      padding: 8px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .roles button:hover {
+      background: #3498db;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Simple Auto-Sliding Banner Carousel -->
+  <div class="carousel">
+    <div class="slides">
+      <!-- Replace these placeholder images with your own -->
+      <img src="image1.webp" alt="Banner 1">
+      <img src="image2.webp" alt="Banner 2">
+      <img src="image3.webp" alt="Banner 3">
+    </div>
+  </div>
+
+  <h1>NatSeer Y-Diet Team Org Chart – Compact View</h1>
+
+  <div class="founder">
+    <!-- Link directly to md.html for your Founder/CEO/MD page -->
+    <div class="box" onclick="location.href='md.html'">
+      👤 Founder / CEO / MD
+    </div>
+  </div>
+
+  <div class="departments">
+
+    <!-- Sourcing Department -->
+    <div class="department">
+      <h3>🌾 Sourcing</h3>
+      <div class="roles">
+        <button onclick="location.href='sourcemanager.html'">Sourcing Manager</button>
+        <button onclick="location.href='inventoryassistant.html'">Inventory Assistant</button>
+      </div>
+    </div>
+
+    <!-- Warehouse Department -->
+    <div class="department">
+      <h3>👩‍🍳 Warehouse</h3>
+      <div class="roles">
+        <button onclick="location.href='storeincharge.html'">Store Incharge</button>
+        <button onclick="location.href='storeassistant.html'">Assistant (Cleaning & Sorting)</button>
+      </div>
+    </div>
+
+    <!-- Meal Planning Department -->
+    <div class="department">
+      <h3>🧠 Meal Planning</h3>
+      <div class="roles">
+        <button onclick="location.href='avaplanner.html'">AVAV Planner</button>
+        <button onclick="location.href='nutritionist.html'">Nutritionist</button>
+      </div>
+    </div>
+
+    <!-- Packaging Department -->
+    <div class="department">
+      <h3>📦 Packaging</h3>
+      <div class="roles">
+        <button onclick="location.href='packaging.html'">Packaging Lead</button>
+        <button onclick="location.href='deliveryrider.html'">Delivery Rider</button>
+      </div>
+    </div>
+
+    <!-- Logistics Department -->
+    <div class="department">
+      <h3>🚚 Logistics</h3>
+      <div class="roles">
+        <button onclick="location.href='despatchcoordinator.html'">Dispatch Coordinator</button>
+        <button onclick="location.href='deliveryrider.html'">Delivery Rider</button>
+      </div>
+    </div>
+
+    <!-- Finance / Admin Department -->
+    <div class="department">
+      <h3>📞 Finance/Admin</h3>
+      <div class="roles">
+        <button onclick="location.href='accountant.html'">Accountant</button>
+        <button onclick="location.href='itsupport.html'">IT</button>
+      </div>
+    </div>
+
+    <!-- Marketing & Support Department -->
+    <div class="department">
+      <h3>📞 Marketing & Support</h3>
+      <div class="roles">
+        <button onclick="location.href='marketing.html'">Marketing</button>
+        <button onclick="location.href='customersupport.html'">Customer Support</button>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

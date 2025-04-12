@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>📦 Y-Diet – Dispatch Coordinator Dashboard (Notion Template)</title>
+  <style>
+    /* Base Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 10px;
+    }
+    header h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1em;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .section-container {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 25px;
+      padding: 20px;
+    }
+    .section-container h2 {
+      font-size: 1.5em;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table th,
+    table td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    table th {
+      background: #f0f0f0;
+    }
+    ul.sop-list {
+      list-style-type: disc;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      color: #777;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📦 Y-Diet – Dispatch Coordinator Dashboard</h1>
+    <p>👤 Role: Dispatch Coordinator</p>
+    <p>
+      Manages the movement of packed meal kits from the packaging area to customers.
+      Plans efficient delivery routes, assigns riders, organizes dispatch timing windows,
+      and ensures timely delivery with real-time issue tracking.
+    </p>
+  </header>
+
+  <!-- Daily Tasks Section -->
+  <div class="section-container">
+    <h2>🗂️ Daily Tasks</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>⏱ Time</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Collect dispatch list</td>
+          <td>Morning</td>
+          <td>Receive daily delivery manifest from Packaging Lead</td>
+        </tr>
+        <tr>
+          <td>Assign delivery riders</td>
+          <td>Morning</td>
+          <td>Allocate kits and routes to each rider (based on zone)</td>
+        </tr>
+        <tr>
+          <td>Prepare route sheets</td>
+          <td>Before dispatch</td>
+          <td>Use Google Maps/Route Planner to optimize paths</td>
+        </tr>
+        <tr>
+          <td>Coordinate dispatch timing</td>
+          <td>Dispatch hour</td>
+          <td>Ensure timely handover of kits to riders in batch slots</td>
+        </tr>
+        <tr>
+          <td>Monitor live deliveries</td>
+          <td>Throughout</td>
+          <td>Track rider status, resolve delays, log any failed deliveries</td>
+        </tr>
+        <tr>
+          <td>Update delivery status log</td>
+          <td>End of day</td>
+          <td>Mark deliveries completed/pending, flag escalations</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Weekly Responsibilities Section -->
+  <div class="section-container">
+    <h2>🗂️ Weekly Responsibilities</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>When</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Plan high-volume days</td>
+          <td>Monday</td>
+          <td>Identify peak load days (detox kits, festivals) and pre-assign extra riders</td>
+        </tr>
+        <tr>
+          <td>Clean & inspect carrier bags</td>
+          <td>Mid-week</td>
+          <td>Ensure all bags, boxes, and cartons are intact and sanitary</td>
+        </tr>
+        <tr>
+          <td>Coordinate with Customer Support</td>
+          <td>Friday</td>
+          <td>Review delivery complaints or address issues from past week</td>
+        </tr>
+        <tr>
+          <td>Rider check-in training</td>
+          <td>Flexible</td>
+          <td>Run refreshers on etiquette, handover protocols, OTP validation</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Monthly Duties Section -->
+  <div class="section-container">
+    <h2>📆 Monthly Duties</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Goal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Optimize zone mapping</td>
+          <td>Monthly</td>
+        </tr>
+        <tr>
+          <td>Maintain delivery audit log</td>
+          <td>Monthly</td>
+        </tr>
+        <tr>
+          <td>Evaluate rider performance</td>
+          <td>Monthly</td>
+        </tr>
+        <tr>
+          <td>Propose logistics upgrades</td>
+          <td>Monthly</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Tools You Use Section -->
+  <div class="section-container">
+    <h2>🧰 Tools You Use</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tool</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dispatch Manifest (Spreadsheet/Notion)</td>
+          <td>Daily master delivery list</td>
+        </tr>
+        <tr>
+          <td>Google Maps / Route Planner</td>
+          <td>Plan shortest and fastest rider paths</td>
+        </tr>
+        <tr>
+          <td>WhatsApp Group</td>
+          <td>Communicate live with riders</td>
+        </tr>
+        <tr>
+          <td>Rider Tracker Sheet / App</td>
+          <td>Track which rider took which kits and what was delivered</td>
+        </tr>
+        <tr>
+          <td>Delivery Log Book</td>
+          <td>Maintain hard-copy record of pickups and drop confirmations</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Dispatch Manifest Template Section -->
+  <div class="section-container">
+    <h2>📋 Dispatch Manifest Template</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Kit ID</th>
+          <th>Customer</th>
+          <th>Area</th>
+          <th>Assigned Rider</th>
+          <th>Status</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>KIT-2201</td>
+          <td>Anjali S</td>
+          <td>Gandhigram</td>
+          <td>Ramesh</td>
+          <td>✅ Delivered</td>
+          <td>On time</td>
+        </tr>
+        <tr>
+          <td>KIT-2202</td>
+          <td>Yusuf K</td>
+          <td>Collector’s Colony</td>
+          <td>Mohan</td>
+          <td>❌ Not delivered</td>
+          <td>Locked house</td>
+        </tr>
+        <tr>
+          <td>KIT-2203</td>
+          <td>Veena R</td>
+          <td>Main Bazaar</td>
+          <td>Priya</td>
+          <td>✅ Delivered</td>
+          <td>Feedback collected</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Best Practices Section -->
+  <div class="section-container">
+    <h2>🧠 Best Practices</h2>
+    <ul class="sop-list">
+      <li>Dispatch in 3 main slots:
+        <ul class="sop-list">
+          <li>7:00 AM – Local Early Zone</li>
+          <li>8:30 AM – Mid &amp; Market Area</li>
+          <li>10:00 AM – Outskirts</li>
+        </ul>
+      </li>
+      <li>Prioritize deliveries based on:
+        <ul class="sop-list">
+          <li>Distance from store</li>
+          <li>Kit perishability (e.g., decoction-based go first)</li>
+          <li>Customer type (elderly, early work hours)</li>
+        </ul>
+      </li>
+      <li>Maintain extra 2–3 kits on hold for:
+        <ul class="sop-list">
+          <li>Delivery errors</li>
+          <li>Last-minute calls</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Department Collaboration Section -->
+  <div class="section-container">
+    <h2>🔗 Department Collaboration</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Department</th>
+          <th>Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Packaging Lead</td>
+          <td>Final handover of packed kits with manifest</td>
+        </tr>
+        <tr>
+          <td>Delivery Riders</td>
+          <td>Coordinate assignments, monitor delivery</td>
+        </tr>
+        <tr>
+          <td>Customer Support</td>
+          <td>Handle rerouting, failed deliveries, urgent complaints</td>
+        </tr>
+        <tr>
+          <td>Inventory &amp; Store</td>
+          <td>Prepare additional packaging material if damaged</td>
+        </tr>
+        <tr>
+          <td>Finance (if COD)</td>
+          <td>Log daily cash handovers from riders</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Y-Diet. All rights reserved.</p>
+  </footer>
+</body>
+</html>

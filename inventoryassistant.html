@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>📋 Y-Diet – Inventory Assistant Dashboard (Notion Template)</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1em;
+      color: #666;
+      margin-bottom: 5px;
+    }
+    .section-container {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 25px;
+      padding: 20px;
+    }
+    .section-container h2 {
+      font-size: 1.5em;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table th,
+    table td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    table th {
+      background: #f0f0f0;
+    }
+    ul.sop-list {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    .meeting-notes {
+      background: #e7f3fe;
+      border-left: 4px solid #2196F3;
+      padding: 12px;
+      margin: 12px 0;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      color: #777;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📋 Y-Diet – Inventory Assistant Dashboard</h1>
+    <p>🧑‍💼 Role: Inventory Assistant</p>
+    <p>Responsible for tracking, updating, and alerting internal teams about raw material levels, stock-in/out movements, and triggering reorder alerts to the Sourcing Manager.</p>
+  </header>
+
+  <!-- Daily Tasks Section -->
+  <div class="section-container">
+    <h2>🗂️ Daily Tasks</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>⏱ Time</th>
+          <th>💬 Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Check physical stock in store</td>
+          <td>Morning</td>
+          <td>Verify critical materials (millets, herbs, oils, labels, packaging)</td>
+        </tr>
+        <tr>
+          <td>Update inventory dashboard</td>
+          <td>Midday</td>
+          <td>Log current levels on Notion/Sheets from delivery or usage</td>
+        </tr>
+        <tr>
+          <td>Alert sourcing team if low</td>
+          <td>Anytime</td>
+          <td>Trigger reorder when below set threshold via WhatsApp/Tag</td>
+        </tr>
+        <tr>
+          <td>Cross-check kitchen withdrawals</td>
+          <td>End of Day</td>
+          <td>Match actual usage vs estimated withdrawals</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Weekly Tasks Section -->
+  <div class="section-container">
+    <h2>🗂️ Weekly Tasks</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>When</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sync with Packaging Lead</td>
+          <td>Every Tue</td>
+          <td>Ensure packaging items (pouches, boxes) are in supply</td>
+        </tr>
+        <tr>
+          <td>Audit random stock item</td>
+          <td>Every Wed</td>
+          <td>Randomly verify physical vs logged stock count</td>
+        </tr>
+        <tr>
+          <td>Update reorder sheet</td>
+          <td>Every Friday</td>
+          <td>Review what needs to be reordered next week</td>
+        </tr>
+        <tr>
+          <td>Cleanup & organize shelf tags</td>
+          <td>Saturday</td>
+          <td>Re-label bins/shelves for easy traceability</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Monthly Duties Section -->
+  <div class="section-container">
+    <h2>📆 Monthly Duties</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Goal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Full physical stock audit</td>
+          <td>1st of each month</td>
+        </tr>
+        <tr>
+          <td>Report damaged or expired items</td>
+          <td>Weekly or as detected</td>
+        </tr>
+        <tr>
+          <td>Archive monthly stock logs</td>
+          <td>End of each month</td>
+        </tr>
+        <tr>
+          <td>Support forecasting plan</td>
+          <td>Share usage trend with Sourcing Manager</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  
+
+  <!-- Inventory Tracker Template Section -->
+  <div class="section-container">
+    <h2>📦 Inventory Tracker Template</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Item Name</th>
+          <th>Current Qty</th>
+          <th>Unit</th>
+          <th>Threshold</th>
+          <th>Status</th>
+          <th>Last Refilled</th>
+          <th>Next Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kodo Millet</td>
+          <td>8 kg</td>
+          <td>Kg</td>
+          <td>10</td>
+          <td>⚠️ Low</td>
+          <td>9 Apr</td>
+          <td>Trigger reorder</td>
+        </tr>
+        <tr>
+          <td>Neem Powder</td>
+          <td>3 kg</td>
+          <td>Kg</td>
+          <td>2</td>
+          <td>✅ OK</td>
+          <td>12 Apr</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>Labels – 250g pouch</td>
+          <td>100 pcs</td>
+          <td>Count</td>
+          <td>80</td>
+          <td>✅ OK</td>
+          <td>10 Apr</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>Wooden Boxes</td>
+          <td>10 pcs</td>
+          <td>Count</td>
+          <td>20</td>
+          <td>🔴 Critical</td>
+          <td>8 Apr</td>
+          <td>Notify Sourcing</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Guidelines & SOP Section -->
+  <div class="section-container">
+    <h2>🧠 Guidelines & SOP</h2>
+    <ul class="sop-list">
+      <li><strong>🔴 Critical</strong> → Trigger reorder immediately</li>
+      <li><strong>⚠️ Low</strong> → Alert sourcing</li>
+      <li><strong>✅ OK</strong> → No action</li>
+      <li>Keep a "Used Today" bin for tracking outgoing items</li>
+      <li>Label everything: include batch code, date in, and weight</li>
+      <li>Maintain FIFO rotation to avoid expiry loss</li>
+      <li>Cross-check at least 3 random SKUs daily</li>
+    </ul>
+  </div>
+
+  <!-- Department Collaboration Section -->
+  <div class="section-container">
+    <h2>🔗 Department Collaboration</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Department</th>
+          <th>Why It’s Linked</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sourcing Manager</td>
+          <td>Trigger reorders when items fall below threshold</td>
+        </tr>
+        <tr>
+          <td>Kitchen Supervisor</td>
+          <td>Track raw usage vs planned batch prep</td>
+        </tr>
+        <tr>
+          <td>Packaging Lead</td>
+          <td>Ensure timely supply of packing material</td>
+        </tr>
+        <tr>
+          <td>Finance</td>
+          <td>Share monthly consumption and wastage reports</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Y-Diet. All rights reserved.</p>
+  </footer>
+</body>
+</html>
